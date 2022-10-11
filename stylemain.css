@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container {
+    background: white;
+    max-width: 100%;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+form #avançar {
+    background: #9857d4;
+    border-color: #9857d4;
+    color: white;
+}
+
+aside img {
+    max-width: 100%;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+}

@@ -1,0 +1,81 @@
+body {
+    background-color: #eff3f7;
+    color: #2b2b2b;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+#menu-hamburguer {
+    position: absolute;
+    opacity: 0;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    background:#2b2b2b;
+    transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1) {
+    top: 0;
+}
+label span:nth-child(2) {
+    top: 8px;
+}
+label span:nth-child(3) {
+    top: 16px;
+}
+
+#menu-hamburguer:checked + label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#menu-hamburguer:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+#menu-hamburguer:checked + label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.information-navbar {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+.information-navbar a {
+    margin: 10px;
+    text-decoration: none;
+    color:#2b2b2b;
+}
+
+.foto-perfil img {
+    max-width: 40px;
+    border-radius: 50%;
+}
